@@ -153,30 +153,40 @@ nav {
 }
 
 .quem_sou .caixa h1 {
+    display: flex;
     padding-bottom: 25px;
     font-family: sans-serif;
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .quem_sou .caixa p {
+    display: flex;
     padding-top: 25px;
     list-style: none;
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     color: rgb(230, 214, 0);
     text-align: center;
     font-weight: bold;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .quem_sou .caixa ul li {
+    display: flex;
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
+    flex-direction: column;
+    align-content: center;
 }
 
 .portifolio {
@@ -222,7 +232,7 @@ nav {
     background-size: cover;
 }
 
-.formacao .form {
+.formacao .forma {
     text-align: center;
     font-size: 140px;
     font-family: sans-serif;
@@ -281,9 +291,64 @@ button {
     background-color: rgba(0, 0, 0, 50%);
 }
 
-@media(max-width: 450px) {
+.contatos {
+    background-color: rgba(0, 0, 0, 80%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.contatos .facebook {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    padding: 25px;
+    background-image: url(../imagens/3377050_facebook_logo_media_social_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contatos .twitter {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    padding: 25px;
+    background-image: url(../imagens/940956_tweet_twitter\ icon_icon\ \.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contatos .instagram {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    padding: 25px;
+    background-image: url(../imagens/940992_instagram\ icon_\ camera_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_name {
+    font-size: 16px;
+}
+
+@media(max-width: 900px) {
     body {
-        overflow: hidden;
+        overflow: auto;
     }
     .list {
         width: 80vw;
@@ -292,6 +357,38 @@ button {
     }
     .list li {
         margin-right: 0;
+    }
+    .cont {
+        background-color: rgba(0, 0, 0, 80%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+    .quem_sou {
+        max-width: 100%;
+    }
+    .quem_sou .titulo {}
+    .quem_sou .w100 {
+        display: flex;
+        flex-direction: column;
+    }
+    .quem_sou .caixa {
+        margin-bottom: 5px;
+        flex: 1;
+    }
+    .quem_sou .caixa h1 {
+        font-size: 24px;
+    }
+    .quem_sou .caixa p {
+        font-size: 18px;
+    }
+    .quem_sou .caixa ul li {
+        font-size: 16px;
+    }
+    .portifolio {
+        max-width: 100%;
     }
 }
 
