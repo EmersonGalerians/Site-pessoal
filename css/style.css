@@ -359,12 +359,24 @@ button {
         margin-right: 0;
     }
     .cont {
-        background-color: rgba(0, 0, 0, 80%);
+        /* background-color: rgba(0, 0, 0, 80%); */
+        /* display: flex; */
+        /* margin-left: 0rem; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* align-content: space-around; */
+        /* flex-wrap: nowrap;*/
+    }
+    .home .entrada h1 {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .home .entrada p {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-left: 3rem;
     }
     .quem_sou {
         max-width: 100%;
@@ -373,6 +385,15 @@ button {
     .quem_sou .w100 {
         display: flex;
         flex-direction: column;
+    }
+    .quem_sou {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .quem_sou .caixa {
         margin-bottom: 5px;
@@ -388,8 +409,16 @@ button {
         font-size: 16px;
     }
     .portifolio {
-        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 25px;
     }
+    .formacao {}
 }
 
 @keyframes navLinkFade {
